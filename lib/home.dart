@@ -73,10 +73,14 @@ class _HomePageState extends State<HomePage> {
                         Expanded(
                           flex: 2,
                           child: CircleAvatar(
-                            radius: 55,
-                            backgroundImage:
-                                NetworkImage('${snapshot.data[index].image}'),
-                            backgroundColor: Colors.transparent,
+                            radius: 60,
+                            backgroundColor: Colors.redAccent,
+                            child: CircleAvatar(
+                              radius: 54,
+                              backgroundImage:
+                                  NetworkImage('${snapshot.data[index].image}'),
+                              backgroundColor: Colors.transparent,
+                            ),
                           ),
                         ),
                         SizedBox(
